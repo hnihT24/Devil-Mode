@@ -263,7 +263,7 @@ L_8_:NewButton(
     "Silent Aim",
     "Silent Aim Toggle Key is T.",
     function()
-	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Universal/Experimental%20Silent%20Aim%20Module.lua"))()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/hnihT24/Devil-Mode/main/Silent.txt"))()
 end
 )
 L_8_:NewTextBox(
