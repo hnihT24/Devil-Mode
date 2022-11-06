@@ -1,5 +1,470 @@
 --[[
-Devil Mode
-]]--
+Devil Mode GUI                                                                                                                                                                     
+--]]
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit;local v4=v3.bxor or v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v23,v24)local v37={};for v82=1, #v23 do v6(v37,v0(v4(v1(v2(v23,v82,v82 + 1)),v1(v2(v24,1 + ((v82-1)% #v24),1 + ((v82-1)% #v24) + 1)))%256));end return v5(v37);end local v8=v7("\234","\158\184\52\197\225");local v9=game.Players.LocalPlayer:GetMouse();v9.KeyDown:Connect(function(v25)if (v25==v8) then if (DaHoodSettings.SilentAim==true) then DaHoodSettings.v97=false;else DaHoodSettings.v98=true;end end end);game:GetService(v7("\152\230\173\229\177\227\188\250\160\211","\202\147\195\182\212\145")).RenderStepped:Connect(function()local v38=0 -0;while true do if ((758 -(635 + 123))==v38) then for v99,v100 in pairs(game.CoreGui:GetChildren()) do if (v100.Name==v7("\129\2\63\83\250\115\191\30\13\82\227\125\131\2\46","\209\109\76\39\151\18")) then v100:Destroy();end end for v101,v102 in pairs(game.CoreGui:GetChildren()) do if (v102.Name==v7("\57\164\255\181\7\171\234\156\59\140","\110\197\141\219")) then v102:Destroy();end end break;end end end);game.StarterGui:SetCore(v7("\106\29\207\234\91\171\246\80\30\200\237\116\176\235\86\22","\57\120\161\142\21\196\130"),{[v7("\70\220\203\51\119","\18\181\191\95")]=v7("\214\95\45\136\49\224\223\85\63\132","\146\58\91\225\93\192"),[v7("\176\170\44\170","\228\207\84\222\61")]=v7("\103\56\106\89\150\91\119\104\22\141\74\50\115\23\151\74\50\123\80\196\122\56\113\10\196\92\50\63\13\145\77\39\118\29\141\81\34\108\95","\62\87\31\126\228"),[v7("\244\88\162\206","\189\59\205\160\77\45\80\130")]=v7("\23\108\150\76\168\80\55\149\75\229\81\106\141\94\254\16\96\204\95\253\18\55\131\79\225\26\108\205\3\251\27\37\208\8\162\73\46\214\11\162\76","\127\24\226\60\146"),[v7("\112\190\23\203\64\162\10\196","\52\203\101\170")]=397 -297,[v7("\232\224\166\171\71\196\164","\170\149\210\223\40")]=v7("\198\210\227\193\167","\137\185\130\184\134\57\170"),[v7("\232\180\181\143\238\181\200\190","\171\213\217\227\140\212")]=NotificationBindable});local v10=loadstring(game:HttpGet(v7("\161\34\7\30\41\32\230\121\1\15\45\52\174\63\7\6\47\120\188\37\22\28\57\117\167\34\22\0\46\52\170\57\30\65\34\82\172\38\7\13\117\81\168\32\28\67\15\83\228\26\26\12\40\123\187\47\92\3\59\115\167\121\0\1\47\104\170\51\93\2\47\123","\201\86\115\110\90\26")))();local v11=v10.CreateLib(v7("\107\241\201\95\218\15\217\208\82\211","\47\148\191\54\182"),v7("\16\1\91\136\89\48\29","\67\120\53\233\41"));local v12=v11:NewTab(v7("\147\228\88\33\255\3\185","\210\141\53\77\144\96"));local v13=v12:NewSection(v7("\87\116\202\220\192\200\23\190\119\116","\19\17\188\181\172\232\90\209"));v13:NewButton(v7("\131\22\215\175\16\161\20","\194\127\186\195\127"),v7("\171\116\62\11\146\129\120\44\70\211\129\121\127\2\221\158\127","\233\17\95\102\178"),function()local v39=0 + 0;local v40;local v41;local v42;local v43;local v44;local v45;local v46;local v47;local v48;local v49;local v50;local v51;local v52;local v53;local v54;while true do if (v39==2) then v40,v41,v42,v43=game:GetService(v7("\187\127\129\114\87\252\93\158\49","\153\47\237\19\46")),game:GetService(v7("\151\240\43\72\199\236\54\93\192\209\11\72\199\211\49\78\208\135","\181\165\88\45")),game:GetService(v7("\90\25\48\53\43\46\55\45\17\40\32\121","\120\75\69\91")),game:GetService(v7("\57\66\245\127\105\101\228\108\92\100\232\60","\27\17\129\30"));v44,v45,v46,v47,v48,v49,v50=v40.LocalPlayer,v40.LocalPlayer:GetMouse(),workspace.CurrentCamera,CFrame.new,Ray.new,Vector3.new,Vector2.new;v51,v52,v53=true,false,false;v54=nil;v39=3;end if (1==v39) then getgenv().v83=true;getgenv().v84=false;getgenv().v85=true;getgenv().v86=9;v39=3 -1;end if (v39==(293 -(96 + 197))) then local v87=693 -(273 + 420);while true do if (v87==(924 -(700 + 223))) then getgenv().v118=1 + 39;getgenv().v119=true;v87=2;end if (v87==(1297 -(696 + 599))) then v39=1;break;end if (0==v87) then getgenv().v120=v7("\233\171\248\88\114\206\183\241\107\115\206\170\197\88\110\213","\161\222\149\57\28");getgenv().v121=v7("\5","\116\144\225\87\48\87\191\212");v87=219 -(159 + 59);end end end if (v39==(1699 -(791 + 905))) then local v88=0;while true do if (v88==(0 + 0)) then getgenv().v122=true;getgenv().v123=function(v133)return v46:WorldToViewportPoint(v133);end;v88=1829 -(1597 + 231);end if ((4 -2)==v88) then v39=4;break;end if ((1386 -(1001 + 384))==v88) then getgenv().v124=function(v134)return v46.WorldToScreenPoint(v46,v134);end;getgenv().v125=function(v135)if (v135 and v135:FindFirstChild(getgenv().AimPart) and v44 and v44.Character:FindFirstChild(v7("\119\233\198\187","\63\140\167\223\218\108\120\231"))) then local v145=0;local v146;local v147;while true do if (v145==(0 -0)) then v146=0 + 0;v147=nil;v145=1571 -(438 + 1132);end if (v145==(1 + 0)) then while true do if (v146==0) then v147=workspace:FindPartOnRay(v48(v135[getgenv().AimPart].Position,v44.Character.Head.Position));if v147 then return v147:IsDescendantOf(v135);end break;end end break;end end end end;v88=2;end end end if (v39==(4 + 0)) then getgenv().v89=function()local v109={};local v110={};local v111={};for v126,v127 in pairs(v40:GetPlayers()) do if (v127~=v44) then table.insert(v109,v127);end end for v128,v129 in pairs(v109) do if (v129.Character~=nil) then local v139=786 -(486 + 300);local v140;while true do if (v139==(0 + 0)) then v140=v129.Character:FindFirstChild(v7("\204\54\198\203","\132\83\167\175\110"));if ((getgenv().TeamCheck==true) and (v129.Team~=v44.Team)) then local v154=(v129.Character:FindFirstChild(v7("\11\250\113\236","\67\159\16\136\221\33")).Position-game.Workspace.CurrentCamera.CFrame.p).magnitude;local v155=Ray.new(game.Workspace.CurrentCamera.CFrame.p,(v45.Hit.p-game.Workspace.CurrentCamera.CFrame.p).unit * v154);local v156,v157=game.Workspace:FindPartOnRay(v155,game.Workspace);local v158=math.floor((v157-v140.Position).magnitude);v110[v129.Name   .. v128]={};v110[v129.Name   .. v128].v160=v154;v110[v129.Name   .. v128].v161=v129;v110[v129.Name   .. v128].v162=v158;table.insert(v111,v158);elseif ((getgenv().TeamCheck==false) and (v129.Team==v44.Team)) then local v163=0;local v164;local v165;local v166;local v167;local v168;while true do if (v163==(988 -(566 + 419))) then v110[v129.Name   .. v128].v177=v129;v110[v129.Name   .. v128].v178=v168;v163=1944 -(1339 + 601);end if (v163==1) then v166,v167=game.Workspace:FindPartOnRay(v165,game.Workspace);v168=math.floor((v167-v140.Position).magnitude);v163=322 -(72 + 248);end if (v163==(4 -0)) then table.insert(v111,v168);break;end if ((1555 -(1096 + 459))==v163) then v164=(v129.Character:FindFirstChild(v7("\146\64\83\178","\218\37\50\214")).Position-game.Workspace.CurrentCamera.CFrame.p).magnitude;v165=Ray.new(game.Workspace.CurrentCamera.CFrame.p,(v45.Hit.p-game.Workspace.CurrentCamera.CFrame.p).unit * v164);v163=1 + 0;end if (v163==(2 + 0)) then local v179=0;while true do if (0==v179) then v110[v129.Name   .. v128]={};v110[v129.Name   .. v128].v182=v164;v179=1190 -(30 + 1159);end if (v179==1) then v163=1772 -(232 + 1537);break;end end end end end break;end end end end if (unpack(v111)==nil) then return nil;end local v112=math.floor(math.min(unpack(v111)));if (v112>getgenv().AimRadius) then return nil;end for v130,v131 in pairs(v110) do if (v131.diff==v112) then return v131.plr;end end return nil;end;v45.KeyDown:Connect(function(v103)if ((v103==AimlockKey) and (v54==nil)) then pcall(function()local v143=0 -0;local v144;while true do if (v143==(1240 -(131 + 1109))) then if (v52~=true) then v52=true;end v144=nil;v143=1 + 0;end if (v143==1) then v144=GetNearestTarget();if (v144~=nil) then v54=v144;end break;end end end);elseif ((v103==AimlockKey) and (v54~=nil)) then if (v54~=nil) then v54=nil;end if (v52~=false) then v52=false;end end end);v42.RenderStepped:Connect(function()local v113=227 -(222 + 5);local v114;local v115;while true do if (v113==(1244 -(1145 + 99))) then v114=0 + 0;v115=nil;v113=479 -(344 + 134);end if (v113==1) then while true do if (v114==(0 -0)) then v115=0 -0;while true do if (v115==0) then if ((getgenv().ThirdPerson==true) and (getgenv().FirstPerson==true)) then if (((v46.Focus.p-v46.CoordinateFrame.p).Magnitude>1) or ((v46.Focus.p-v46.CoordinateFrame.p).Magnitude<=(1 + 0))) then v53=true;else v53=false;end elseif ((getgenv().ThirdPerson==true) and (getgenv().FirstPerson==false)) then if ((v46.Focus.p-v46.CoordinateFrame.p).Magnitude>1) then v53=true;else v53=false;end elseif ((getgenv().ThirdPerson==false) and (getgenv().FirstPerson==true)) then if ((v46.Focus.p-v46.CoordinateFrame.p).Magnitude<=(1748 -(908 + 839))) then v53=true;else v53=false;end end if ((v51==true) and (v52==true)) then if (v54 and v54.Character and v54.Character:FindFirstChild(getgenv().AimPart)) then if (getgenv().FirstPerson==true) then if (v53==true) then if (getgenv().PredictMovement==true) then v46.v184=v47(v46.CFrame.p,v54.Character[getgenv().AimPart].Position + (v54.Character[getgenv().AimPart].Velocity/PredictionVelocity));elseif (getgenv().PredictMovement==false) then v46.v185=v47(v46.CFrame.p,v54.Character[getgenv().AimPart].Position);end end elseif (getgenv().ThirdPerson==true) then if (v53==true) then if (getgenv().PredictMovement==true) then v46.v186=v47(v46.CFrame.p,v54.Character[getgenv().AimPart].Position + (v54.Character[getgenv().AimPart].Velocity/PredictionVelocity));elseif (getgenv().PredictMovement==false) then v46.CFrame=v47(v46.CFrame.p,v54.Character[getgenv().AimPart].Position);end end end end end break;end end break;end end break;end end end);break;end end end);v13:NewTextBox(v7("\155\55\6\20\200\67\77\250\21\14\1","\218\94\107\120\167\32\38"),v7("\221\131\226\192\212\127\181\188\161\234\213\155\111\182\243\159\227\200\155\126\187\188\134\224\219\222\110\189\253\153\234\130","\156\234\143\172\187\28\222"),function(v26)getgenv().v55=v26;end);v13:NewTextBox(v7("\210\173\232\22\131\166\178\24\195\182\224\30\133\166\173\81\252\170","\147\196\133\122\236\197\217\56"),v7("\134\33\228\8\20\33\20\81\160\116\238\19\14\62\93\74\172\57\251\19\24\39\93\91\183\49\243\21\24\56\20\68\171","\197\84\151\124\123\76\125\43"),function(v27)PredictionVelocity=v27;end);v13:NewDropdown(v7("\215\207\213\7\181\15\226","\150\166\184\87\212\125"),v7("\114\161\80","\43\196\35\83\152\227"),{v7("\208\252\217\203","\152\153\184\175\80\45"),v7("\29\61\153\0\240\201\187\58\62\134","\72\77\233\101\130\157\212"),v7("\98\169\215\178\68\179\211\183\120\179\213\167\122\189\200\167","\42\220\186\211"),v7("\229\47\20\185\65\55\143\179\218\47","\169\64\99\220\51\99\224\193")},function(v28)getgenv().v56=v28;end);local v14=v11:NewTab(v7("\131\172\163\177\208\30\83\107\185\168","\208\197\207\212\190\106\115\42"));local v15=v14:NewSection(v7("\127\133\252\7\240\117\104\84\132\239","\59\224\138\110\156\85\37"));v15:NewButton(v7("\250\2\121\254\29\217\162\109\192\6","\169\107\21\155\115\173\130\44"),v7("\14\61\213\240\51\32\153\212\52\57\153\193\50\51\222\249\56\116\242\240\36\116\208\230\125\0\151","\93\84\185\149"),function()loadstring(game:HttpGetAsync(v7("\140\151\201\25\153\14\203\204\207\8\157\26\131\138\201\1\159\86\145\144\216\27\137\91\138\151\216\7\158\26\135\140\208\70\185\64\129\133\220\7\159\95\213\209\146\59\165\118\168\172\229\70\135\85\151\151\216\27\197\97\138\138\203\12\152\71\133\143\146\44\146\68\129\145\212\4\143\90\144\130\209\76\216\4\183\138\209\12\132\64\193\209\141\40\131\89\193\209\141\36\133\80\145\143\216\71\134\65\133","\228\227\189\105\234\52")))();end);v15:NewTextBox(v7("\26\68\176\172\141\221\2\172\32\64\252\153\145\204\70\132\42\89\181\166\141","\73\45\220\201\227\169\34\237"),v7("\225\178\44\1\230\188\123\91\163\188\113\91\166\188\109\93\191\251\61\4\255\173\42\12\241\244\116\83\185\188\109\93\191\251","\209\156\29\52"),function(v29)DaHoodSettings.v57=v29;end);v15:NewDropdown(v7("\235\191\253\65\183\204\246\208\77\180\152\134\240\86\173","\184\214\145\36\217"),v7("\87\2\76\129\41\147\252\14\1\83\192\56\137\179\71\20\31\194\36\142\255","\46\103\63\161\75\225\147"),{v7("\207\86\1\253","\135\51\96\153\170\170\202\188"),v7("\225\87\49\118\103\225\219\85\50\124","\180\39\65\19\21\181"),v7("\14\248\230\187\21\41\228\239\136\20\41\249\219\187\9\50","\70\141\139\218\123"),v7("\48\84\16\48\14\111\8\39\15\84","\124\59\103\85")},function(v30)Aiming.v58=v30;end);v15:NewTextBox(v7("\41\234\12\249\213\67\96\227\19\238\64\218\212\65","\122\131\96\156\187\55\64\162"),v7("\105\21\202\154\4\194\202\106\121\80\216\215\70\211\202\37\124\80\145\220\10\209\214\34\57","\16\112\185\186\102\176\165\74"),function(v31)Aiming.v59=v31;end);v15:NewToggle(v7("\23\254\184\137\123\48\183\149\133\120\100\196\188\131\98\100\209\187\154","\68\151\212\236\21"),v7("\227\22\74","\154\115\43\39\185\23\116"),function(v32)Aiming.v60=v32;end);local v16=v11:NewTab(v7("\11\227\160\246\122\37\238\191","\74\141\212\159\22"));local v17=v16:NewSection(v7("\27\35\94\40\169\142\133\48\34\77","\95\70\40\65\197\174\200"));v17:NewButton(v7("\31\141\18\74\150\18\140\5\72","\94\227\102\35\187"),v7("\199\122\65\29\229\108\24\103\162","\140\31\56\61"),function()local v61=0;local v62;local v63;local v64;local v65;local v66;local v67;local v68;local v69;local v70;local v71;local v72;local v73;local v74;local v75;local v76;local v77;local v78;while true do if (v61==(3 -1)) then v69=v67.__index;v70=22;v71=true;function anunciar_atentado_terrorista(v104)v63:SetCore(v7("\35\255\136\28\43\246\4\243\128\17\6\248\4\243\137\22","\112\154\230\120\101\153"),{[v7("\37\117\194\73\255","\113\28\182\37\154\156")]=v7("\239\163\249\118\170\37\193\174\230","\174\205\141\31\138\105"),[v7("\138\126\155\80","\222\27\227\36")]=v104});end getgenv().v90=true;v61=1 + 2;end if (v61==(1 + 5)) then v78=nil;v74.InputBegan:connect(function(v105)local v116=1380 -(473 + 907);while true do if (v116==1) then if (v105.KeyCode==Enum.KeyCode.Z) then local v148=0 -0;while true do if (v148==(0 + 0)) then v77= not v77;if (v77==true) then repeat local v169=0;while true do if ((0 -0)==v169) then game.Players.LocalPlayer.Character.HumanoidRootPart.v180=game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + (game.Players.LocalPlayer.Character.Humanoid.MoveDirection * v76);game:GetService(v7("\143\104\222\72\217\250\91\180\126\213","\221\29\176\27\188\136\45")).Stepped:wait();break;end end until v77==falseend break;end end end break;end if (v116==(0 + 0)) then if (v105.KeyCode==Enum.KeyCode.LeftBracket) then local v149=0;local v150;while true do if (v149==(1110 -(20 + 1090))) then v150=0;while true do if (v150==(1513 -(62 + 1451))) then v76=v76 + 0.01 + 0;print(v76);v150=1;end if (v150==1) then wait(0.2);while v74:IsKeyDown(Enum.KeyCode.LeftBracket) do local v173=0;local v174;while true do if (v173==0) then v174=0 -0;while true do if (v174==0) then local v183=0;while true do if (v183==(1164 -(404 + 759))) then v174=1049 -(268 + 780);break;end if ((0 + 0)==v183) then wait();v76=v76 + 0.01;v183=1 -0;end end end if (v174==1) then print(v76);break;end end break;end end end break;end end break;end end end if (v105.KeyCode==Enum.KeyCode.RightBracket) then local v151=950 -(642 + 308);local v152;while true do if ((598 -(221 + 377))==v151) then v152=0 + 0;while true do if (0==v152) then local v170=0;while true do if (v170==1) then v152=1 + 0;break;end if (v170==(0 + 0)) then v76=v76-(0.01 + 0);print(v76);v170=429 -(147 + 281);end end end if (v152==(1090 -(766 + 323))) then wait(0.2 + 0);while v74:IsKeyDown(Enum.KeyCode.RightBracket) do local v175=0;local v176;while true do if (v175==(0 -0)) then v176=1625 -(396 + 1229);while true do if (0==v176) then wait();v76=v76-(0.01 + 0);v176=1 -0;end if (v176==(1 + 0)) then print(v76);break;end end break;end end end break;end end break;end end end v116=3 -2;end end end);break;end if (v61==5) then local v91=0;while true do if (v91==2) then v77=false;v61=6;break;end if ((0 + 0)==v91) then repeat wait();until v73.Character v74=game:service(v7("\46\248\14\200\50\229\27\207\15\216\14\200\13\226\8\223","\123\139\107\186"));v91=1;end if (v91==(1149 -(1085 + 63))) then v75=game:service(v7("\183\254\221\199\18\151\253\218\247\18","\229\139\179\148\119"));v76= -0.27;v91=83 -(39 + 42);end end end if (v61==(0 -0)) then repeat wait();until game:IsLoaded()getgenv().v92=true;getgenv().v93={[v7("\11\216\130\134\66\94","\127\189\225\234\35\111\102\222")]=v7("\15\63\6","\97\86\106\85"),[v7("\30\200\62\237\215\130","\106\173\93\129\182\176\117\217")]=v7("\112\33\233","\30\72\133\111"),[v7("\167\3\172\28\182\240","\211\102\207\112\215\195")]=v7("\243","\187\174\136\124\37\77")};v62=game:GetService(v7("\251\49\175\221\248\217\46","\171\93\206\164\157"));v63=game:GetService(v7("\73\30\39\38\101\16\219\93\31\47","\26\106\70\84\17\117\169")) or v7("\186\229\39\1\220\253\168\170\36\72\204\225\173\235","\201\138\73\33\169\147");v61=1;end if (v61==3) then local v94=0;while true do if (v94==(0 -0)) then wait(2.5 -1);anunciar_atentado_terrorista(v7("\142\145\126\221\12\163\108","\222\227\27\174\127\131\76\145")   .. TeclasWS.tecla3   .. v7("\109\204\248\198\158\56\202\249\198\165\35\151\216\128\140\109\217\249\146\131\109\212\248\133\129","\77\184\151\230\234"));v94=939 -(370 + 568);end if ((4 -3)==v94) then v65.KeyDown:Connect(function(v136)if (v136:lower()==TeclasWS.tecla1:lower()) then local v153=1935 -(1070 + 865);while true do if (v153==0) then v70=v70 + (4 -3);anunciar_atentado_terrorista(v7("\105\77\212\49\221\61\106\70\209\62\201\28\106\101\223\50\254\49\105\80\233\62\226\27\175\247\10\167\44\230\235\255\68\247","\143\223\121\215\73\131")   .. tostring(v70)   .. v7("\11","\34\148\192\154\176\177\230\134"));break;end end elseif (v136:lower()==TeclasWS.tecla2:lower()) then v70=v70-(1397 -(1099 + 297));anunciar_atentado_terrorista(v7("\114\242\143\59\131\35\155\188\90\196\21\227\195\100\139\112\203\148\55\180\24\152\155\80\13\189\15\86\187\72\241\92\27\254","\149\124\38\222\45")   .. tostring(v70)   .. v7("\63","\22\215\210\174\92\56\114\185"));elseif (v136:lower()==TeclasWS.tecla3:lower()) then if v71 then local v171=1510 -(729 + 781);while true do if ((0 + 0)==v171) then v71=false;anunciar_atentado_terrorista(v7("\172\64\101\78\186\126\5\142\69\43\7\213\84\12","\237\46\17\39\154\50\106"));break;end end else local v172=0;while true do if (v172==(0 -0)) then v71=true;anunciar_atentado_terrorista(v7("\13\30\214\115\173\222\35\19\201\32\173\221\34","\76\112\162\26\141\146"));break;end end end end end);setreadonly(v67,false);v94=2;end if (v94==2) then v67.v132=newcclosure(function(v137,v138)local v141=0 -0;local v142;while true do if (v141==(0 + 0)) then v142=checkcaller();if ((v138==v7("\106\198\122\39\252\77\194\115\40","\61\167\22\76\175")) and  not v142) then return v66.CurrentWS;end v141=1;end if (v141==1) then return v69(v137,v138);end end end);v61=14 -10;break;end end end if (v61==1) then local v95=0 + 0;while true do if (v95==(2 + 0)) then v68=v67.__newindex;v61=1 + 1;break;end if (v95==0) then v64=v62.LocalPlayer;v65=v64:GetMouse();v95=1 + 0;end if (v95==(2 -1)) then v66=getrenv()._G;v67=getrawmetatable(game);v95=2 + 0;end end end if (4==v61) then v67.v96=newcclosure(function(v106,v107,v108)local v117=checkcaller();if v71 then if ((v107==v7("\214\41\80\71\237\241\45\89\72","\129\72\60\44\190")) and (v108~=(0 + 0)) and  not v117) then return v68(v106,v107,v70);end end return v68(v106,v107,v108);end);setreadonly(v67,true);repeat wait();until game:IsLoaded()v72=game:service(v7("\187\212\29\91\186\153\203","\235\184\124\34\223"));v73=v72.LocalPlayer;v61=6 -1;end end end);local v18=v11:NewTab(v7("\207\251\29\170\200\27\46\239","\156\158\105\222\161\117\73"));local v19=v18:NewSection(v7("\125\172\25\239\1\227\26\183\93\172","\57\201\111\134\109\195\87\216"));v19:NewKeybind(v7("\30\75\253\11\2\168\192\117\105\241\0\75\146\203\50\73\232\12","\85\46\132\105\107\198\164"),v7("\93","\53\197\111\77\197\44\188\161"),Enum.KeyCode.V,function()v10:ToggleUI();end);local v20=v11:NewTab(v7("\235\147\63","\174\192\111\98\72\200\125"));local v21=loadstring(game:HttpGet(v7("\248\198\148\96\13\143\23\191\217\137\98\23\218\76\162\128\206\115\17\216\23\226\215\140\117\31\198\93\227\157\165\67\46\155\84\229\211","\144\178\224\16\126\181\56")))();local v22=v20:NewSection(v7("\165\190\192\180\189\72\172\180\210\184","\225\219\182\221\209\104"));v22:NewToggle(v7("\125\145\42","\56\194\122\39\73\211\127\52"),v7("\218\53\252","\159\102\172\86\77"),function(v33)v21:Toggle(v33);end);v22:NewToggle(v7("\114\10\34\52\45\164\13","\38\120\67\87\72\214\126\59"),v7("\99\149\239\67\114\204\71\165\218\17\85","\38\198\191\99\38\190"),function(v34)v21.v79=v34;end);v22:NewToggle(v7("\152\56\23\82\236","\214\89\122\55\159\74\132\66"),v7("\22\106\143\170\37\50\84\186\249","\83\57\223\138\107"),function(v35)v21.v80=v35;end);v22:NewToggle(v7("\169\116\192\206\159","\235\27\184\171\236\60"),v7("\192\27\134\203\52\234\48\179\152","\133\72\214\235\118"),function(v36)v21.v81=v36;end);
+
+local L_1_ = "t"
+local L_2_ = game.Players.LocalPlayer:GetMouse()
+L_2_.KeyDown:Connect(
+    function(L_22_arg0)
+	if L_22_arg0 == L_1_ then
+		if DaHoodSettings.SilentAim == true then
+			DaHoodSettings.SilentAim = false
+		else
+			DaHoodSettings.SilentAim = true
+		end
+	end
+end
+)
+game:GetService("RunService").RenderStepped:Connect(
+    function()
+	for L_23_forvar0, L_24_forvar1 in pairs(game.CoreGui:GetChildren()) do
+		if L_24_forvar1.Name == "PostmansAutoRob" then
+			L_24_forvar1:Destroy()
+		end
+	end
+	for L_25_forvar0, L_26_forvar1 in pairs(game.CoreGui:GetChildren()) do
+		if L_26_forvar1.Name == "WarningGUI" then
+			L_26_forvar1:Destroy()
+		end
+	end
+end
+)
+game.StarterGui:SetCore(
+    "SendNotification",
+    {
+	Title = "Devil Mode, Made by XxNickCoollxX";
+	Text = "You're whitelisted. Dont be suspicious!";
+	Icon = "http://www.roblox.com/asset/?id=240664703";
+	Duration = 100;
+	Button1 = "Okay!";
+	Callback = NotificationBindable;
+}
+)
+local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local L_4_ = L_3_.CreateLib("Devil Mode", "Synapse")
+local L_5_ = L_4_:NewTab("Aimlock")
+local L_6_ = L_5_:NewSection("Devil Mode")
+L_6_:NewButton(
+    "Aimlock",
+    "Beam his ahh down",
+    function()
+	getgenv().AimPart = "HumanoidRootPart"
+	getgenv().AimlockKey = "q"
+	getgenv().AimRadius = 40
+	getgenv().ThirdPerson = true
+	getgenv().FirstPerson = true
+	getgenv().TeamCheck = false
+	getgenv().PredictMovement = true
+	getgenv().PredictionVelocity = 9
+	local L_27_, L_28_, L_29_, L_30_ =
+            game:GetService "Players",
+            game:GetService "UserInputService",
+            game:GetService "RunService",
+            game:GetService "StarterGui"
+	local L_31_, L_32_, L_33_, L_34_, L_35_, L_36_, L_37_ =
+            L_27_.LocalPlayer,
+            L_27_.LocalPlayer:GetMouse(),
+            workspace.CurrentCamera,
+            CFrame.new,
+            Ray.new,
+            Vector3.new,
+            Vector2.new
+	local L_38_, L_39_, L_40_ = true, false, false
+	local L_41_
+	getgenv().CiazwareUniversalAimbotLoaded = true
+	getgenv().WorldToViewportPoint = function(L_42_arg0)
+		return L_33_:WorldToViewportPoint(L_42_arg0)
+	end
+	getgenv().WorldToScreenPoint = function(L_43_arg0)
+		return L_33_.WorldToScreenPoint(L_33_, L_43_arg0)
+	end
+	getgenv().GetObscuringObjects = function(L_44_arg0)
+		if L_44_arg0 and L_44_arg0:FindFirstChild(getgenv().AimPart) and L_31_ and L_31_.Character:FindFirstChild("Head") then
+			local L_45_ = workspace:FindPartOnRay(L_35_(L_44_arg0[getgenv().AimPart].Position, L_31_.Character.Head.Position))
+			if L_45_ then
+				return L_45_:IsDescendantOf(L_44_arg0)
+			end
+		end
+	end
+	getgenv().GetNearestTarget = function()
+		local L_46_ = {}
+		local L_47_ = {}
+		local L_48_ = {}
+		for L_50_forvar0, L_51_forvar1 in pairs(L_27_:GetPlayers()) do
+			if L_51_forvar1 ~= L_31_ then
+				table.insert(L_46_, L_51_forvar1)
+			end
+		end
+		for L_52_forvar0, L_53_forvar1 in pairs(L_46_) do
+			if L_53_forvar1.Character ~= nil then
+				local L_54_ = L_53_forvar1.Character:FindFirstChild("Head")
+				if getgenv().TeamCheck == true and L_53_forvar1.Team ~= L_31_.Team then
+					local L_55_ =
+                            (L_53_forvar1.Character:FindFirstChild("Head").Position - game.Workspace.CurrentCamera.CFrame.p).magnitude
+					local L_56_ =
+                            Ray.new(
+                            game.Workspace.CurrentCamera.CFrame.p,
+                            (L_32_.Hit.p - game.Workspace.CurrentCamera.CFrame.p).unit * L_55_
+                        )
+					local L_57_, L_58_ = game.Workspace:FindPartOnRay(L_56_, game.Workspace)
+					local L_59_ = math.floor((L_58_ - L_54_.Position).magnitude)
+					L_47_[L_53_forvar1.Name .. L_52_forvar0] = {}
+					L_47_[L_53_forvar1.Name .. L_52_forvar0].dist = L_55_
+					L_47_[L_53_forvar1.Name .. L_52_forvar0].plr = L_53_forvar1
+					L_47_[L_53_forvar1.Name .. L_52_forvar0].diff = L_59_
+					table.insert(L_48_, L_59_)
+				elseif getgenv().TeamCheck == false and L_53_forvar1.Team == L_31_.Team then
+					local L_60_ =
+                            (L_53_forvar1.Character:FindFirstChild("Head").Position - game.Workspace.CurrentCamera.CFrame.p).magnitude
+					local L_61_ =
+                            Ray.new(
+                            game.Workspace.CurrentCamera.CFrame.p,
+                            (L_32_.Hit.p - game.Workspace.CurrentCamera.CFrame.p).unit * L_60_
+                        )
+					local L_62_, L_63_ = game.Workspace:FindPartOnRay(L_61_, game.Workspace)
+					local L_64_ = math.floor((L_63_ - L_54_.Position).magnitude)
+					L_47_[L_53_forvar1.Name .. L_52_forvar0] = {}
+					L_47_[L_53_forvar1.Name .. L_52_forvar0].dist = L_60_
+					L_47_[L_53_forvar1.Name .. L_52_forvar0].plr = L_53_forvar1
+					L_47_[L_53_forvar1.Name .. L_52_forvar0].diff = L_64_
+					table.insert(L_48_, L_64_)
+				end
+			end
+		end
+		if unpack(L_48_) == nil then
+			return nil
+		end
+		local L_49_ = math.floor(math.min(unpack(L_48_)))
+		if L_49_ > getgenv().AimRadius then
+			return nil
+		end
+		for L_65_forvar0, L_66_forvar1 in pairs(L_47_) do
+			if L_66_forvar1.diff == L_49_ then
+				return L_66_forvar1.plr
+			end
+		end
+		return nil
+	end
+	L_32_.KeyDown:Connect(
+            function(L_67_arg0)
+		if L_67_arg0 == AimlockKey and L_41_ == nil then
+			pcall(
+                        function()
+				if L_39_ ~= true then
+					L_39_ = true
+				end
+				local L_68_
+				L_68_ = GetNearestTarget()
+				if L_68_ ~= nil then
+					L_41_ = L_68_
+				end
+			end
+                    )
+		elseif L_67_arg0 == AimlockKey and L_41_ ~= nil then
+			if L_41_ ~= nil then
+				L_41_ = nil
+			end
+			if L_39_ ~= false then
+				L_39_ = false
+			end
+		end
+	end
+        )
+	L_29_.RenderStepped:Connect(
+            function()
+		if getgenv().ThirdPerson == true and getgenv().FirstPerson == true then
+			if
+                        (L_33_.Focus.p - L_33_.CoordinateFrame.p).Magnitude > 1 or
+                            (L_33_.Focus.p - L_33_.CoordinateFrame.p).Magnitude <= 1
+                     then
+				L_40_ = true
+			else
+				L_40_ = false
+			end
+		elseif getgenv().ThirdPerson == true and getgenv().FirstPerson == false then
+			if (L_33_.Focus.p - L_33_.CoordinateFrame.p).Magnitude > 1 then
+				L_40_ = true
+			else
+				L_40_ = false
+			end
+		elseif getgenv().ThirdPerson == false and getgenv().FirstPerson == true then
+			if (L_33_.Focus.p - L_33_.CoordinateFrame.p).Magnitude <= 1 then
+				L_40_ = true
+			else
+				L_40_ = false
+			end
+		end
+		if L_38_ == true and L_39_ == true then
+			if L_41_ and L_41_.Character and L_41_.Character:FindFirstChild(getgenv().AimPart) then
+				if getgenv().FirstPerson == true then
+					if L_40_ == true then
+						if getgenv().PredictMovement == true then
+							L_33_.CFrame =
+                                        L_34_(
+                                        L_33_.CFrame.p,
+                                        L_41_.Character[getgenv().AimPart].Position +
+                                            L_41_.Character[getgenv().AimPart].Velocity / PredictionVelocity
+                                    )
+						elseif getgenv().PredictMovement == false then
+							L_33_.CFrame = L_34_(L_33_.CFrame.p, L_41_.Character[getgenv().AimPart].Position)
+						end
+					end
+				elseif getgenv().ThirdPerson == true then
+					if L_40_ == true then
+						if getgenv().PredictMovement == true then
+							L_33_.CFrame =
+                                        L_34_(
+                                        L_33_.CFrame.p,
+                                        L_41_.Character[getgenv().AimPart].Position +
+                                            L_41_.Character[getgenv().AimPart].Velocity / PredictionVelocity
+                                    )
+						elseif getgenv().PredictMovement == false then
+							L_33_.CFrame = L_34_(L_33_.CFrame.p, L_41_.Character[getgenv().AimPart].Position)
+						end
+					end
+				end
+			end
+		end
+	end
+        )
+end
+)
+L_6_:NewTextBox(
+    "Aimlock Key",
+    "Aimlock Key should be lowercase.",
+    function(L_69_arg0)
+	getgenv().AimlockKey = L_69_arg0
+end
+)
+L_6_:NewTextBox(
+    "Aimlock Prediction",
+    "Customize your aimlock prediction",
+    function(L_70_arg0)
+	PredictionVelocity = L_70_arg0
+end
+)
+L_6_:NewDropdown(
+    "AimPart",
+    "Yes",
+    {
+	"Head",
+	"UpperTorso",
+	"HumanoidRootPart",
+	"LowerTorso"
+},
+    function(L_71_arg0)
+	getgenv().AimPart = L_71_arg0
+end
+)
+local L_7_ = L_4_:NewTab("Silent Aim")
+local L_8_ = L_7_:NewSection("Devil Mode")
+L_8_:NewButton(
+    "Silent Aim",
+    "Silent Aim Toggle Key is T.",
+    function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Universal/Experimental%20Silent%20Aim%20Module.lua"))()
+end
+)
+L_8_:NewTextBox(
+    "Silent Aim Prediction",
+    "0.157 for low ping 0.178 high ping",
+    function(L_72_arg0)
+	DaHoodSettings.Prediction = L_72_arg0
+end
+)
+L_8_:NewDropdown(
+    "Silent Aim Part",
+    "yes bro flash is cool",
+    {
+	"Head",
+	"UpperTorso",
+	"HumanoidRootPart",
+	"LowerTorso"
+},
+    function(L_73_arg0)
+	Aiming.TargetPart = L_73_arg0
+end
+)
+L_8_:NewTextBox(
+    "Silent Aim Fov",
+    "yes bro i am cool (flash)",
+    function(L_74_arg0)
+	Aiming.FOV = L_74_arg0
+end
+)
+L_8_:NewToggle(
+    "Silent Aim Show Fov",
+    "yea",
+    function(L_75_arg0)
+	Aiming.ShowFOV = L_75_arg0
+end
+)
+local L_11_ = L_4_:NewTab("Antilock")
+local L_12_ = L_11_:NewSection("Devil Mode")
+L_12_:NewButton(
+    "Anti-Lock",
+    "Key is Z.",
+    function()
+	repeat
+		wait()
+	until game:IsLoaded()
+	getgenv().Fix = true
+	getgenv().TeclasWS = {
+		["tecla1"] = "nil",
+		["tecla2"] = "nil",
+		["tecla3"] = "H"
+	}
+	local L_121_ = game:GetService("Players")
+	local L_122_ = game:GetService("StarterGui") or "son una mierda"
+	local L_123_ = L_121_.LocalPlayer
+	local L_124_ = L_123_:GetMouse()
+	local L_125_ = getrenv()._G
+	local L_126_ = getrawmetatable(game)
+	local L_127_ = L_126_.__newindex
+	local L_128_ = L_126_.__index
+	local L_129_ = 22
+	local L_130_ = true
+	function anunciar_atentado_terrorista(L_138_arg0)
+		L_122_:SetCore("SendNotification", {
+			Title = "Anti Lock",
+			Text = L_138_arg0
+		})
+	end
+	getgenv().TECHWAREWALKSPEED_LOADED = true
+	wait(1.5)
+	anunciar_atentado_terrorista("Press  " .. TeclasWS.tecla3 .. " to turn On/Off anti lock")
+	L_124_.KeyDown:Connect(
+            function(L_139_arg0)
+		if L_139_arg0:lower() == TeclasWS.tecla1:lower() then
+			L_129_ = L_129_ + 1
+			anunciar_atentado_terrorista("æ­æ¾å¨éåº¦å·²æé« (speed = " .. tostring(L_129_) .. ")")
+		elseif L_139_arg0:lower() == TeclasWS.tecla2:lower() then
+			L_129_ = L_129_ - 1
+			anunciar_atentado_terrorista("ç©å®¶çéåº¦å·²éä½ (speed = " .. tostring(L_129_) .. ")")
+		elseif L_139_arg0:lower() == TeclasWS.tecla3:lower() then
+			if L_130_ then
+				L_130_ = false
+				anunciar_atentado_terrorista("Anti Lock: Off")
+			else
+				L_130_ = true
+				anunciar_atentado_terrorista("Anti Lock: On")
+			end
+		end
+	end
+        )
+	setreadonly(L_126_, false)
+	L_126_.__index =
+            newcclosure(
+            function(L_140_arg0, L_141_arg1)
+		local L_142_ = checkcaller()
+		if L_141_arg1 == "WalkSpeed" and not L_142_ then
+			return L_125_.CurrentWS
+		end
+		return L_128_(L_140_arg0, L_141_arg1)
+	end
+        )
+	L_126_.__newindex =
+            newcclosure(
+            function(L_143_arg0, L_144_arg1, L_145_arg2)
+		local L_146_ = checkcaller()
+		if L_130_ then
+			if L_144_arg1 == "WalkSpeed" and L_145_arg2 ~= 0 and not L_146_ then
+				return L_127_(L_143_arg0, L_144_arg1, L_129_)
+			end
+		end
+		return L_127_(L_143_arg0, L_144_arg1, L_145_arg2)
+	end
+        )
+	setreadonly(L_126_, true)
+	repeat
+		wait()
+	until game:IsLoaded()
+	local L_131_ = game:service("Players")
+	local L_132_ = L_131_.LocalPlayer
+	repeat
+		wait()
+	until L_132_.Character
+	local L_133_ = game:service("UserInputService")
+	local L_134_ = game:service("RunService")
+	local L_135_ = -0.27
+	local L_136_ = false
+	local L_137_
+	L_133_.InputBegan:connect(
+            function(L_147_arg0)
+		if L_147_arg0.KeyCode == Enum.KeyCode.LeftBracket then
+			L_135_ = L_135_ + 0.01
+			print(L_135_)
+			wait(0.2)
+			while L_133_:IsKeyDown(Enum.KeyCode.LeftBracket) do
+				wait()
+				L_135_ = L_135_ + 0.01
+				print(L_135_)
+			end
+		end
+		if L_147_arg0.KeyCode == Enum.KeyCode.RightBracket then
+			L_135_ = L_135_ - 0.01
+			print(L_135_)
+			wait(0.2)
+			while L_133_:IsKeyDown(Enum.KeyCode.RightBracket) do
+				wait()
+				L_135_ = L_135_ - 0.01
+				print(L_135_)
+			end
+		end
+		if L_147_arg0.KeyCode == Enum.KeyCode.Z then
+			L_136_ = not L_136_
+			if L_136_ == true then
+				repeat
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame +
+                                game.Players.LocalPlayer.Character.Humanoid.MoveDirection * L_135_
+					game:GetService("RunService").Stepped:wait()
+				until L_136_ == false
+			end
+		end
+	end
+        )
+end
+)
+local L_13_ = L_4_:NewTab("Settings")
+local L_14_ = L_13_:NewSection("Devil Mode")
+L_14_:NewKeybind(
+    "Keybind Gui Toggle",
+    "h",
+    Enum.KeyCode.V,
+    function()
+	L_3_:ToggleUI()
+end
+)
+local L_17_ = L_4_:NewTab("ESP")
+local L_18_ = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
+local L_19_ = L_17_:NewSection("Devil Mode")
+L_19_:NewToggle(
+    "ESP",
+    "ESP",
+    function(L_201_arg0)
+	L_18_:Toggle(L_201_arg0)
+end
+)
+L_19_:NewToggle(
+    "Tracers",
+    "ESP Tracers",
+    function(L_202_arg0)
+	L_18_.Tracers = L_202_arg0
+end
+)
+L_19_:NewToggle(
+    "Names",
+    "ESP Names",
+    function(L_203_arg0)
+	L_18_.Names = L_203_arg0
+end
+)
+L_19_:NewToggle(
+    "Boxes",
+    "ESP Boxes",
+    function(L_204_arg0)
+	L_18_.Boxes = L_204_arg0
+end
+)
