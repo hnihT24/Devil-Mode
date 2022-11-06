@@ -33,7 +33,7 @@ end
 game.StarterGui:SetCore(
     "SendNotification",
     {
-	Title = "Devil Mode, Made by XxNickCoollxX";
+	Title = "Devil Mode";
 	Text = "You're whitelisted. Dont be suspicious!";
 	Icon = "http://www.roblox.com/asset/?id=240664703";
 	Duration = 100;
