@@ -46,7 +46,7 @@ local L_4_ = L_3_.CreateLib("Devil Mode", "Synapse")
 local L_5_ = L_4_:NewTab("Aimlock")
 local L_6_ = L_5_:NewSection("Devil Mode")
 L_6_:NewButton(
-    "Aimlock",
+    "Use Another Aimlock in my profile for better experience.",
     "Beam his ahh down",
     function()
 	getgenv().AimPart = "HumanoidRootPart"
@@ -345,10 +345,10 @@ L_12_:NewButton(
 		elseif L_139_arg0:lower() == TeclasWS.tecla3:lower() then
 			if L_130_ then
 				L_130_ = false
-				anunciar_atentado_terrorista("Anti Lock: Off")
+				anunciar_atentado_terrorista("Anti Lock Fix: Off")
 			else
 				L_130_ = true
-				anunciar_atentado_terrorista("Anti Lock: On")
+				anunciar_atentado_terrorista("Anti Lock Fix: On")
 			end
 		end
 	end
